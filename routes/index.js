@@ -27,7 +27,7 @@ function getHomeData(type, page, res, session, callback){
 			console.log(err);
 		} else {
 			var totalPages = Math.ceil(num/totalPerPage);
-			if(totalPages < page){
+			if(totalPages < page && num !== 0){
 				res.redirect('/');
 			} else {
 				var skip = totalPerPage*(page-1);
