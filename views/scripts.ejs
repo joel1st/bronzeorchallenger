@@ -1,0 +1,27 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+<script id="vote-template" type="text/x-handlebars-template">
+<div class="outcome">
+	<small>USER VOTES</small>
+	<div class="progress" style="margin-top:15px">
+      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"  style="width:{{votePercent}}%"></div>
+    </div>
+    <div class="vote-distribution clearfix">
+		<div class="vote-recap">
+		<h4 class="bronze">{{ bronzeVotes }}</h4>
+		Bronze 
+		</div>
+		<div class="vote-recap">
+		<h4 class="challenger">{{ challengerVotes }}</h4>
+			Challenger
+		</div>
+	</div>
+	{{#if voteMatch }}
+		<span class="success">You voted correctly! It was indeed  <img src="/img/{{ league }}.png" alt="{{ league }}" /></span>
+	{{else}}
+		<span class="failure"> Wrong! It was actually a <img src="/img/{{ league }}.png" alt="{{ league }}" /> play.</span>
+	{{/if}}
+</div>
+</script>
+<script src="/js/core.js"></script>
+

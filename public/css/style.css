@@ -1,0 +1,177 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:#1b1b1b;
+  color:rgb(194, 194, 194);
+}
+
+.field-title{
+	margin-right:15px;
+	font-size:1em;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:rgb(249, 230, 121);
+}
+.form-input{
+	padding:5px;
+	/*display:inline-block;*/
+}
+#video-submit{
+	display:block;
+	font-size:1.1em;
+	margin:auto;
+	margin-bottom:25px;
+}
+
+.large-header{
+	margin:auto;
+	text-align:center;
+	max-width: 750px;
+	padding: 3px 0px;
+	margin-top: 20px;
+	border: 1px solid rgb(15, 15, 15);
+	background-color: #212327;
+	padding-top:12px;
+}
+.btn{
+	font-weight:bold;
+}
+#submit{
+	margin-top:4px;
+}
+#video-submit input[type="submit"], #video-submit input[type="text"], #video-submit input[type="radio"]{
+	color:black;
+}
+
+.main-container{
+  max-width:1400px;margin:auto;
+}
+
+.logo{
+	display:block;
+	margin:auto;
+}
+
+.error-msg{
+	color:red;
+	position: relative;
+}
+
+h2 {
+	color:#54E5D3;
+	font-size:1.4em;
+	font-weight:bold;
+	text-align:center;
+	margin-bottom: 40px;
+position: relative;
+top: 15px;
+}
+
+a {
+  color: #00B7FF;
+}
+.video{
+	max-width:750px;
+	margin:auto	;
+	margin-bottom:35px;
+}
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.pagination {
+	margin: auto;
+margin-bottom: 30px;
+display:block;
+text-align:center;
+}
+
+.explanation{
+	text-align:center;
+	margin-top: 20px;
+	margin-bottom:25px;
+}
+
+a{
+	color:#EDDCAA;
+}
+a:hover{
+	color:rgb(255, 251, 150);
+}
+.selected{
+	color:#54E5D3;
+	font-weight:bold;
+}
+.voting{
+	margin-top:5px;
+	text-align:center;
+	margin-bottom:30px;
+	color:white;
+}
+.voter{
+	cursor:pointer;
+	opacity:0.85;
+}
+
+.voter:hover{
+	opacity:1;
+}
+
+.progress-bar{
+	background-color:#A7704E;
+}
+.bronze{
+color:#A7704E;
+}
+
+.progress{
+	background-color:#4CEDD5;
+	margin:15px 0px;
+}
+
+
+.challenger{
+	color:#4CEDD5;
+}
+.outcome{
+	font-weight:bold;
+	font-size:1.3em;
+	border:1px solid rgb(15, 15, 15);
+}
+.vote-recap{
+	float:left;width:50%;text-align:center;
+	margin-bottom:11px;
+}
+.video-area{
+	margin-top: -25px;
+}
+
+.failure{
+	color:rgb(255, 89, 89);
+}
+.success{
+	color:rgb(255, 221, 102);
+}
+h4{
+	font-weight:bold;
+	margin-top:0px;
+	margin-bottom:4px;
+	font-size:1.4em;
+}
+.outcome img{
+	position:relative;
+	top:-3px;
+	height:38px;
+}
+.outcome{
+	background-color: rgb(33, 35, 39);
+padding: 20px;
+}
