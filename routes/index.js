@@ -62,7 +62,7 @@ function getHomeData(type, page, res, session, callback){
 router.get('/', function(req, res) {
 
 	var page = Number(req.query.page)
-  var type =  (req.query.type === 'new' || req.query.type === 'hot' || req.query.type === 'top') ? req.query.type : 'new';
+  var type =  (req.query.type === 'new' || req.query.type === 'hot' || req.query.type === 'top') ? req.query.type : 'top';
   var page = (!isNaN(page) && page > 0) ? page : 1;
  
   getHomeData(type, page, res, req.session, function(num, data){
