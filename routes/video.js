@@ -6,7 +6,7 @@ var YoutubeVideo = require('../models/youtubeVideo');
 var pageData = {
 	description: "Vote on what League of Legends plays are from Challenger or Bronze players",
 	title: "Video"
-}
+};
 /* GET home page. */
 router.get('/:video', function(req, res, next) {
 	var videoId = req.params.video;
