@@ -7,7 +7,7 @@
 		var resObj = {
 			videoId:id,
 			league:league
-		}
+		};
 		$.post("/vote", resObj)
 		  .done(function( data ) {
 		  	data.votePercent = data.bronzeVotes/data.totalVotes * 100;
@@ -20,6 +20,5 @@
 		$this = $(this);
 		submitVote($this.data('league'), $this.data('id'));
 	});
-	
 
 })(jQuery);
